@@ -28,11 +28,15 @@ export default function Profile() {
     return (
         <>
             <section id="header">
-                <div className=" container">
+                <div className="container">
                     <div className="logo"
                         data-aos="fade-up"
+                        data-aos-offset="200"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
+                        data-aos-mirror="false"
+                        data-aos-once="true"
+                        data-aos-anchor-placement="cemter-top"
 
                     >
                         <img src="https://www.freepnglogos.com/uploads/a-logo-5.png" alt="" />
@@ -44,8 +48,16 @@ export default function Profile() {
                             <span>Hey I'm <span></span></span>
                             <span>Dr. VEERESH<span></span></span>
                             <span>FUSKELE <span></span></span>
-                            <div data-aos="fade-up" data-aos-duration="1000">
-                                <button>Download CV</button>
+                            <div >
+                                <button className='btn btn-grad'
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-duration="1000"
+                                    data-aos-easing="ease-in-out"
+                                    data-aos-mirror="false"
+                                    data-aos-once="true"
+                                    data-aos-anchor-placement="cemter-top"
+                                >Download CV</button>
                             </div>
                         </div>
                         <div className="parent_image"
