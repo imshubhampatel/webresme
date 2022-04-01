@@ -1,9 +1,10 @@
 import React from 'react'
+import MediaCard from './Card/Card'
 
 export default function About() {
     return (
         <div>
-            this is about page
+            <MediaCard />
         </div>
     )
 }
