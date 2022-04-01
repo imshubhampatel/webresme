@@ -13,11 +13,12 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 280,
+    backgroundPosition: "top",
   },
 });
 
-export default function MediaCard() {
+export default function MediaCard({ url }) {
   const classes = useStyles();
 
   return (
@@ -25,7 +26,7 @@ export default function MediaCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={url}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -40,10 +41,10 @@ export default function MediaCard() {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          View
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Download
         </Button>
       </CardActions>
     </Card>

@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
 
-
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,8 +23,8 @@
   --bold-weight: 500;
   --light-weight: 400;
   --normal-weight: 300;
-  --font-roboto: 'Roboto', sans-serif;
-  --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
   --auto: 0 auto;
   --button-color: #3054fe;
   --top-center: 50%;
@@ -34,10 +35,72 @@
   --center-margin: 0px 67.5px;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-roboto);
 }
 
 .container {
   margin: var(--center-margin);
+}
+
+.card-second {
+  background-color: rgb(247, 247, 247);
+}
+
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#about {
+  padding: 40px 0px;
+  background-color: #fbfbfb;
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 16px;
+  color: #555;
+}
+
+.about-wrapper {
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .small {
+  font-size: 28px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+  width: 170px;
+  margin-bottom: 13px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+}
+
+.about-img > img {
+  display: block;
+  height: 300px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 10px;
 }
