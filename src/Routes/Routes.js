@@ -13,7 +13,7 @@ export default function Routes() {
     <Router>
       <Switch>
         <Route path="/" element={<Page />} />
-        <Route path="/profile" element={<Profile />} />F
+        <Route path="/profile" element={<Profile />} />
         <Route path="/about" element={<About />} />
       </Switch>
     </Router>
